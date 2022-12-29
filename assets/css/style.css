@@ -77,7 +77,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .section-mid h2 {
@@ -124,6 +124,7 @@ body {
   background-color: var(--back-txt-logo);
   color: var(--color-font);
   border-radius: 20px;
+  margin-top: 50px;
 }
 
 .img-end img {
@@ -164,7 +165,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: var(--color-font);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .area-form {
@@ -172,12 +173,17 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: -20px;
 }
 
 .area-form h2 {
   color: var(--color-font);
   text-transform: uppercase;
   text-align: center;
+}
+
+.div-form {
+  display: flex;
 }
 
 .formulario form {
@@ -189,7 +195,7 @@ body {
 
 }
 .formulario input {
-  margin-top: 20px;
+  margin-top: 15px;
   padding-left: 10px;
   width: 400px;
   height: 40px;
@@ -224,15 +230,67 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 50px;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 .social h3 {
   color: var(--color-font);
   font-weight: normal;
+  text-align: center;
   
 }
 
 .social img {
   width: 30px;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .section-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+  }
+  .img-top img {
+    width: 450px;
+    height: auto;
+    margin: 20px 55px 20px 55px;
+    border-radius: 25px;
+  }
+
+  .title-top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-top h3 {
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-font);
+  }
+
+  .title-top h1 {
+    font-size: 45px;
+    text-align: center;
+
+  }
+
+  .btn-button {
+    margin-top: 10px;
+  }
+  .cards {
+    display: flex;
+    flex-direction:row;
+  }
+  .card {
+    margin-top: 40px;
+  }
+  .section-mid h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
 }
